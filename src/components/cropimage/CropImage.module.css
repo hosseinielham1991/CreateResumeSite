@@ -1,0 +1,55 @@
+.mainImg {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  max-height: 70vh;
+}
+
+.privewDefaultImg {
+  max-height: 70vh;
+  max-width:100%;
+}
+.holderDivError {
+  height: 70vh;
+  border: 2px dashed var(--border);
+}
+.btnUpload {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imageView {
+  width: 90px;
+  height: 90px;
+  border: 1px solid var(--border);
+  background-color: #ddd;
+}
+
+.holdeEditImg {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.btnEdit {
+  color: var(--background_second);
+  cursor: pointer;
+}
+
+.userAvatar {
+  margin: 0 0 1rem 0;
+  text-align: center;
+  color: #ddd;
+}
+
+.autoWidth{
+  max-width:200px!important;
+  height: auto!important;
+  width: auto!important;
+}

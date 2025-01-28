@@ -1,0 +1,7 @@
+.backIcon {
+  cursor: pointer;
+}
+.backIcon,
+.titleEdit {
+  font-size: 18px;
+}

@@ -1,0 +1,23 @@
+.columnSummary {
+  min-width: 200px;
+}
+.columnAction {
+  white-space: nowrap;
+  max-width: 130px;
+  width: 130px;
+  font-size: 16px;
+}
+
+.imageView {
+  width: auto;
+  height: 50px;
+  border: 1px solid Var(--border);
+}
+
+.backIcon {
+  cursor: pointer;
+}
+.backIcon,
+.titleEdit {
+  font-size: 18px;
+}

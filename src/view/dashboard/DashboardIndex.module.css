@@ -1,0 +1,36 @@
+.accountSettings .userProfile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.accountSettings .userProfile h5.userName {
+  margin: 0 0 0.5rem 0;
+}
+.accountSettings .userProfile h6.username {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #9fa8b9;
+}
+.accountSettings .about {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.accountSettings .about h5 {
+  margin: 0 0 15px 0;
+  color: #007ae1;
+}
+.accountSettings .about p {
+  font-size: 0.825rem;
+}
+
+.holderImg {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 992px) {
+  .holderImg {
+    margin-top: 10px;
+  }
+}

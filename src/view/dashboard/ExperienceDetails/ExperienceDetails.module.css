@@ -1,0 +1,14 @@
+.imageView {
+  width: auto;
+  height: 50px;
+  border: 1px solid Var(--border);
+}
+
+.columnAction {
+  white-space: nowrap;
+  max-width: 130px;
+  width: 130px;
+}
+.colorHeader {
+  background-color: var(--secondray-color);
+}

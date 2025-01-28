@@ -1,0 +1,213 @@
+:root {
+  --background: #a9aeb0;
+  --background_second: #fff; 
+  --background_third: rgb(244, 242, 238);
+  --font: #646464;
+  --font_second:#323232;
+  --primary-color:#4c7753;
+  --primary-light-color:#b7d1ad;
+  --primary-color-text:#3a6040;
+  --border: #dddddd;
+  --primary-color-hover:#3e6044; 
+  --link:rgb(8, 112, 150);
+  --height_of_menu:56px;
+  --secondray-color:#b7d1ad;
+}
+
+/* body,html{
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+
+  background:linear-gradient(to bottom right, var(--background) 0%, #e5e6e8 100%) ;
+  
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+   background-color:linear-gradient(to bottom right, var(--background) 0%, #e5e6e8 100%) ;
+   color: var(--font);
+} */
+
+html {
+  height: 100%; /* This sets the reference for the body's min-height */
+}
+
+
+
+/* or if you are using modern CSS, you could employ the viewport height unit for body */
+body {
+  min-height: 100vh; /* 'vh' units are 1/100th of the viewport height */
+  margin: 0; /* Reset default margin */
+  overflow-x: hidden; /* Hide horizontal scrollbar if not needed */
+}
+
+html, body {
+  overflow: auto; /* or 'visible' */
+  height: auto; /* ensure no fixed height is set */
+  background-color: var(--background_third)!important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.svg-inline--fa{
+  color: var(--font);
+}
+
+
+
+.cv-header{
+  height: var(--height_of_menu);
+  position: fixed;
+  z-index:100;
+  top:0;
+  border-top:5px solid var(--primary-color);
+  background-color: var(--background_second);
+  margin-top: 0px!important;
+  width:100%;
+
+
+
+}
+.cv-logo{
+  max-height:100%;
+  max-width:60%;
+}
+
+.cv-holderlogo{
+  max-height: 100%;
+  padding: 9px 0;
+}
+
+
+.cv-holderMenu{
+  flex: 1 1 0;
+}
+
+.cv-with-column{
+  max-width: 1268px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  width: 100%;
+}
+
+.cv-header-logo-and-btn{
+  margin-top: 0px!important;
+  margin-bottom:0px!important;
+  height: var(--height_of_menu);
+}
+
+@media screen and (max-width: 500px) {
+  .cv-header-logo-and-btn{
+    margin-left :2vh !important ;
+    margin-right: 2vh !important ;
+  }
+
+}
+
+
+.cv-btn-header{
+  color:var(--primary-color);
+  padding:5px;
+  font-size: 24px;
+}
+
+.cv-user-profile-image{
+  width: 30px;
+  height:30px;
+  margin: 3px 0;
+  background-color: #ccc;
+}
+
+.cv-btn-header-label{
+  margin-inline-end: 5px;
+  color:var(--primary-color);
+  white-space: nowrap;
+}
+
+.cv-link-header ,
+ .cv-link-header *{
+  text-decoration: none!important;
+  cursor: pointer;
+}
+
+.cv-join-now{
+  background-color: var(--primary-light-color) ;
+  height: 34px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0 10px;
+
+  .cv-btn-header-label{
+    margin: 0px;
+    color:var(--primary-color-text);
+  }
+}
+
+
+.cv-link-header {
+  /* Your existing non-hover styles here */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Handle box-sizing for padding and border */
+  margin-inline-end: 5px;
+}
+
+.cv-link-header:hover { /* Added focus for better accessibility */
+  background-color: #4c7753; /* Your primary color */
+  color: #ffffff; /* White color for the text */
+  text-decoration: none; /* No underline on hover */
+  transform: translateY(-3px); /* Move up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+.cv-link-header:hover .cv-btn-header{
+  color: #ffffff; /* Ensure icons are also white */
+}
+
+.cv-link-header:hover .cv-btn-header-label{
+  color: #ffffff; /* Ensure labels are also white */
+}
+
+.cv-main-holder{
+  width:100%;
+  padding-top:var(--height_of_menu);
+}
+
+
+#root{
+  overflow:hidden;
+}
+
+a{
+  text-decoration: none!important;
+  cursor: pointer;
+}
+
+a *{
+  cursor: pointer;
+}
+
+
+/* ovverwrite antd */
+.ant-table-wrapper .ant-table-content{
+  overflow-x: auto;
+}
+
+.ant-modal .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger){
+  margin-bottom: 0;
+  margin-inline-start: 8px;
+}
+
+
+
