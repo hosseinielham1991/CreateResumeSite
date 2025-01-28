@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# cvisionary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Version**: 0.1.0  
+**Description**: A web platform that allows users to create a personal resume website, register their details, and provide a custom URL for their resume page. This application features sign-up, login functionality, and the ability to store personal information along with work experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React**: ^18.2.0  
+  Core library for building user interfaces and components.
+  
+- **React Router**: ^6.23.1  
+  Routing library for dynamic navigation between pages.
+  
+- **Redux Toolkit & React-Redux**: ^2.2.1 & ^9.1.0  
+  State management tools for handling application state.
+  
+- **Ant Design**: ^5.19.3  
+  UI component library for modern web interfaces.
+  
+- **Bootstrap**: ^5.3.2  
+  CSS framework for building responsive, flexible websites.
+  
+- **Drag-and-Drop**: @dnd-kit/core, @dnd-kit/modifiers, @dnd-kit/sortable  
+  Libraries for creating interactive drag-and-drop interfaces.
+  
+- **Axios**: ^1.6.5  
+  Promise-based HTTP client for making API requests.
+  
+- **Sass**: ^1.69.5  
+  CSS preprocessor for maintainable and reusable styling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Other Utilities**:
+  - `dayjs`: Date management library.
+  - `react-dropzone`: For file uploads.
+  - `react-helmet`: For managing document head metadata.
+  - `react-highlight-words`: For text highlighting.
+  - `react-image-crop`: For cropping images.
+  - `countries-list`: For country data.
+  - `cross-env`: For setting environment variables.
+  - `history`: For managing navigation history.
+  - `web-vitals`: For performance monitoring.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Sign Up & Login**:  
+  Users can create an account and log in to manage their resumes.
 
-### `npm run build`
+- **Resume Management**:  
+  Users can enter personal information and work experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Custom URL**:  
+  Each user can define a custom URL for their resume webpage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get started with this project, follow the instructions below.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ensure you have the following installed:
+- Node.js
+- npm or yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/cvisionary.git
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies:
+    ```bash
+    cd cvisionary
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running the Application
 
-### Code Splitting
+To run the application in development mode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start
